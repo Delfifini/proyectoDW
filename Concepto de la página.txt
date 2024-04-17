@@ -1,0 +1,10 @@
+Bienvenido a mi proyecto de Desarrollo Web!
+
+Esta página se crea con la idea de ser usada como catálogo, galería y red social. 
+En ella se podrá acceder a la información de los denominados "husband", personajes ficticios asociados a la idea de "hombre ideal".
+Se podrá participar de las votaciones de popularidad y dejar comentarios en las fichas técnicas de los personajes.
+También se podrá buscar información sobre la serie o manga (historieta japonesa), el seiyuu (actor de voz) y el score total.
+Contará también con un botón "random" que llevará al usuario a una ficha de personaje al azar.
+En el prototipo este botón nos lleva al modelo de ficha de personaje.
+
+Desde ya muchas gracias por su tiempo!

@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../Multimedia/BH\ background.jpg);
+     font-family: "Nunito", sans-serif;
+     font-optical-sizing: auto;
+}
+
+.BestoHTitle {
+    font-size: 1rem;
+    margin-right: 0cm;
+    text-align:start left;
+}
+
+.LangIcon {
+    width: 22px;
+    margin-left: 1px ;
+    margin-right: 1px;
+    display: inline-block;
+}
+
+.Ingreso {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 1rem;
+    display: inline;
+    text-decoration: underline;
+}
+
+.FirstLine {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.menuBar {
+    display: flex;
+    justify-content: center;
+}
+
+.Menu {
+    width: 800px;
+    height: 35px;
+    background-color:blueviolet;
+    background: linear-gradient(to right, #f5eaff 0%,#bd92d3 47%,#4f256b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    margin-left: 50px;
+    margin-right: 50px;
+    color: aliceblue;
+    padding: 5px;
+
+}
+
+.menuB {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.MainPic {
+    width: 500px;
+    height: 400px;
+    background-color: aliceblue;
+    margin-left: 150px;
+    margin-right: 150px;
+
+}
+
+.mainIma {
+    display: flex;
+    justify-content: center;
+}
+
+
+.WeeklyRank {
+    width: 800px;
+    height: 400px;    
+    background-color: aliceblue;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px
+}   
+
+.weekRank {
+    display: flex;
+    justify-content: center;
+}
+
+.futer {
+    width: 800px;
+    height: 35px;
+    background-color:blueviolet;
+    background: linear-gradient(to right, #f5eaff 0%,#bd92d3 47%,#4f256b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    margin-left: 50px;
+    margin-right: 50px;
+    color: aliceblue;
+    padding: 5px;
+}
+
+.futer {
+    display: flex;
+    justify-content: center;
+}
+
+.wholeFoot {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.socialIcon {
+    width: 25px;
+}
+
+.whiteLetter {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.mainCenter {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.azMain {
+    width: 800px;
+    height: 800px;
+}
+
+.azMenu {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.azTextMenu {
+    font-size: 0.8rem;
+}
+
+.azContent {
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+.faqMain {
+    width: 800px;
+}
+
+.faqTitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.formularioContacto {
+    margin-top: 50px;
+}
+
+.submitButton {
+   margin: 5px;
+}
+
+.charaOption {
+    display: flex ;
+    justify-content: center;
+    margin: 20px;
+}
+
+.charaMain {
+    display: flex;
+   justify-content: center;
+}
+
+.charaMainPic {
+    background-color: #f5eaff;
+    width: 500px;
+    height: 400px;
+}
+
+.charaMainInfo {
+    width: 300px;
+    height: 400px;
+    overflow: scroll;
+    padding: 10px;
+}
+
+.gallery {
+    margin-top: 30px;
+}
+
+.galleryPics {
+    margin-top: 10px;
+    width: 750px;
+    display: flex;
+    justify-content: center;
+}
+
+.galleryMain {
+    width: 400px;
+    border-style: dashed;
+}
+
+.galleryOther {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.gallery1 {
+    width: 100px;
+    height: 100px;
+    border-style: dashed;
+}
+
+.rankOption {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.numberOne {
+    width: 700px;
+    height: 350px;
+    background-color: #f5eaff;
+    display: flex;
+    flex-direction: row;
+}
+
+.numberOnePic {
+    background-color: #f5eaff;
+    width: 500px;
+}
+
+.numberOneInfo {
+    width: 300px;
+    overflow: scroll;
+    padding: 10px;
+}
+
+.rankingOther {
+    margin-top: 20px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.secondPlace {
+    width: 400px;
+    background-color: #f5eaff;
+    display: flex;
+    flex-direction: row;
+}
+
+.secondInfo {
+    width: 100px;
+    overflow: scroll;
+}
+
+.thirdPlace {
+    width: 300px;
+    background-color: #f5eaff;
+    display: flex;
+    flex-direction: row;
+}
+
+.thirdInfo {
+    width: 100px;
+    overflow: scroll;
+}
+
