@@ -47,7 +47,7 @@ body{
 .Menu {
     width: 800px;
     height: 35px;
-    background-color:#892be218;
+    background-color:blueviolet;
     background: linear-gradient(to right, #f5eaff 0%,#bd92d3 47%,#4f256b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     margin-left: 50px;
     margin-right: 50px;
