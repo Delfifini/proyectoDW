@@ -10,20 +10,20 @@ body{
      font-optical-sizing: auto;
 }
 
-.BestoHTitle {
+.bestoHTitle {
     font-size: 1rem;
     margin-right: 0cm;
     text-align:start left;
 }
 
-.LangIcon {
+.langIcon {
     width: 22px;
     margin-left: 1px ;
     margin-right: 1px;
     display: inline-block;
 }
 
-.Ingreso {
+.ingreso {
     margin-left: 0;
     margin-right: 0;
     font-size: 1rem;
@@ -31,7 +31,7 @@ body{
     text-decoration: underline;
 }
 
-.FirstLine {
+.firstLine {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -44,7 +44,7 @@ body{
     justify-content: center;
 }
 
-.Menu {
+.menu {
     width: 800px;
     height: 35px;
     background-color:blueviolet;
@@ -70,7 +70,7 @@ li {
 
 }
 
-.MainPic {
+.mainPic {
     width: 500px;
     height: 400px;
     background-color: aliceblue;
@@ -85,7 +85,7 @@ li {
 }
 
 
-.WeeklyRank {
+.weeklyRank {
     width: 800px;
     height: 400px;    
     background-color: aliceblue;
