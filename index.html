@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
@@ -24,17 +25,41 @@
                 <h2 class="ingreso signUp">Sign up</h2>
            </div>
         </div>
-        <div class="menuBar">
-            <div class="menu">
-                <ul>
-                    <li><h2><a href="./paginas/ranking.html" class="menuB goRanking whiteLetter">Ranking</a></h2></li>
-                    <li><h2><a href="./paginas/az.html" class="menuB goAZ whiteLetter" >A-Z Husbies</a></h2></li>
-                    <li><h2><a href="" class="menuB goReco whiteLetter">Recommended</a></h2></li>
-                    <li><h2><a href="./paginas/character.html" class="menuB goRandom whiteLetter">Random</a></h2></li>
-                </ul>
-            </div>
-        </div>
-
+        
+       <div class="menuBar">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary menu">
+                <div class="container-fluid">
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./paginas/ranking.html" class="menuB goRanking whiteLetter">Ranking</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./paginas/az.html" class="menuB goAZ whiteLetter">A-Z Husbies</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Recommended
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Character</a></li>
+                          <li><a class="dropdown-item" href="#">Anime/Manga</a></li>
+                          <li><a class="dropdown-item" href="#">Seiyuu</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./paginas/character.html" class="menuB goRandom whiteLetter" >Random</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+       </div>
+       
     </header>
 
     <main>
@@ -65,29 +90,30 @@
 
     <footer>
         <div class="wholeFoot">
-            <div class="futer">
-                <div>
-                    <ul>
-                        <li><h2><a href="./index.html" class="menuB GoHome whiteLetter">Home</a></h2></li>
-                        <li><h2 class="menuB goAbout whiteLetter" >About us</h2></li>
-                        <li><h2 class="menuB goSiteMap whiteLetter" >Site map</h2></li>
-                        <li><h2><a href="./paginas/faq.html" class="menuB goFAQ whiteLetter" >FAQ</a></h2></li>
-                    </ul>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary futer">
+                <div class="container-fluid">
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="./index.html" class="menuB GoHome whiteLetter">Home</a>
+                      <a class="nav-link" href="#">About us</a>
+                      <a class="nav-link" href="#">Site map</a>
+                      <a class="nav-link" href="./paginas/faq.html" class="menuB goFAQ whiteLetter">F.A.Q.</a>
+                    </div>
+                    <div class="footLogos">
+                        <ul class="iconList">
+                            <li><img src="./multimedia/Instagram-Icon.png" alt="ig icon" class="socialIcon"></li>
+                            <li><img src="./multimedia/fb-icon.png" alt="fb icon" class="socialIcon"></li>
+                            <li><img src="./multimedia/png-clipart-discord-computer-servers-teamspeak-discord-icon-video-game-smiley-thumbnail.png" alt="discord icon" class="socialIcon"></li>
+                            <li><img src="./multimedia/twitter logo.webp" alt="x icon" class="socialIcon"></li>
+                        </ul>
+            
+                    </div>
+                  </div>
                 </div>
-                <div class="footLogos">
-                    <ul class="iconList">
-                        <li><img src="./multimedia/Instagram-Icon.png" alt="ig icon" class="socialIcon"></li>
-                        <li><img src="./multimedia/fb-icon.png" alt="fb icon" class="socialIcon"></li>
-                        <li><img src="./multimedia/png-clipart-discord-computer-servers-teamspeak-discord-icon-video-game-smiley-thumbnail.png" alt="discord icon" class="socialIcon"></li>
-                        <li><img src="./multimedia/twitter logo.webp" alt="x icon" class="socialIcon"></li>
-                    </ul>
-        
-                </div>
-        
-            </div>
-    
+              </nav>
         </div>
     </footer>    
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
