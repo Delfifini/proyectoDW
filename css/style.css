@@ -122,6 +122,11 @@ li {
     justify-content: center;
 }
 
+.footLogos {
+    display: flex;
+    justify-content: center;
+}
+
 
 .socialIcon {
     width: 25px;
