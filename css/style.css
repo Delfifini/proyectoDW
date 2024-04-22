@@ -232,10 +232,6 @@ li {
     justify-content: center;
 }
 
-.charaPic{ 
-    
-}
-
 .charaMainInfo {
     grid-area: charaMainInfo ;
     width: 300px;
