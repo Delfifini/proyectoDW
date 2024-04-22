@@ -45,17 +45,18 @@ body{
     display: flex;
     justify-content: center;
 }
+    
+    .menu {
+        width: 80%;
+        background-color:blueviolet;
+        background: linear-gradient(to right, #f5eaff 0%,#bd92d3 47%,#4f256b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        margin-left: 50px;
+        margin-right: 50px;
+        color: aliceblue;
+        padding: 5px;
+    
+    }
 
-.menu {
-    width: 80%;
-    background-color:blueviolet;
-    background: linear-gradient(to right, #f5eaff 0%,#bd92d3 47%,#4f256b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    margin-left: 50px;
-    margin-right: 50px;
-    color: aliceblue;
-    padding: 5px;
-
-}
 
 .menuB {
     margin-left: 10px;
@@ -89,7 +90,6 @@ li {
 .weeklyRank {
     width: 800px;
     height: 400px;    
-    background-color: aliceblue;
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 40px;
@@ -99,6 +99,37 @@ li {
 .weekRank {
     display: flex;
     justify-content: center;
+}
+
+.firstPPic{
+    height: 200px;
+    display: flex;
+    border: 5px #dfaee1 solid;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 5px 10px;
+    grid-auto-flow: row;
+    grid-template-areas: 
+    "pjRank aniRank"
+    "pjRank aniRank"
+    "pjRank seiRank"
+    "pjRank seiRank";
+}
+
+.pjRank {
+    grid-area:pjRank ;
+}
+
+.aniRank{
+    grid-area: aniRank;
+}
+
+.seiRank{
+    grid-area: seiRank;
 }
 
 .futer {
