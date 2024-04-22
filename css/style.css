@@ -46,16 +46,15 @@ body{
     justify-content: center;
 }
     
-    .menu {
-        width: 80%;
-        background-color:blueviolet;
-        background: linear-gradient(to right, #f5eaff 0%,#bd92d3 47%,#4f256b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        margin-left: 50px;
-        margin-right: 50px;
-        color: aliceblue;
-        padding: 5px;
-    
-    }
+.menu {
+    width: 80%;
+    background-color:blueviolet;
+    background: linear-gradient(to right, #f5eaff 0%,#bd92d3 47%,#4f256b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    margin-left: 50px;
+    margin-right: 50px;
+    color: aliceblue;
+    padding: 5px;
+}
 
 
 .menuB {
@@ -217,17 +216,28 @@ li {
 }
 
 .charaMain {
-    display: flex;
-   justify-content: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "charaMainPic charaMainInfo"
+    "charaMainPic charaMainInfo";
 }
 
 .charaMainPic {
-    background-color: #f5eaff;
-    width: 500px;
+    grid-area: charaMainPic;
+    width: 400px;
     height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.charaPic{ 
+    
 }
 
 .charaMainInfo {
+    grid-area: charaMainInfo ;
     width: 300px;
     height: 400px;
     overflow: scroll;
