@@ -1,0 +1,415 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../multimedia/background.jpg);
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+}
+.firstLine{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    .bestoHTitle{
+        height: 22px;
+        font-size: 1rem;
+        margin-right: 0cm;
+        text-align:start left;
+    }
+    div{
+        .langIcon{
+            width: 22px;
+            height: 22px;
+            margin-left: 1px ;
+            margin-right: 1px;
+            display: inline-block;
+        }
+        .ingreso{
+            margin-left: 0;
+            margin-right: 0;
+            font-size: 1rem;
+            display: inline;
+            text-decoration: underline;
+        }
+    }
+}
+.navBar{
+    width: 80%;
+    background-color:blueviolet;
+    background: linear-gradient(to right, #f5eaff 0%,#bd92d3 47%,#4f256b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    color: aliceblue;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+.mainCenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: max-content;
+}
+.menuBar{
+    display: flex;
+    justify-content: center;
+    height: max-content;
+    .menu{
+        @extend .navBar;
+        li{   
+            list-style: none;
+            display: inline-block;
+            padding-left: 10px;
+            padding-right: 10px;
+            .menuB{
+                margin-left: 10px;
+                margin-right: 10px;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+}
+.wholeFoot{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    .futer{
+        @extend .navBar;
+        div{
+            .footLogos{
+                display: flex;
+                .iconList{
+                    list-style: none;
+                    display: flex;
+                    flex-direction: row;
+                    .socialIcon{
+                        width: 25px;
+                        margin: 0 10px 0 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+.azMainCenter{
+    @extend .mainCenter;
+    hr{
+        margin: 10px;
+    }
+    .azMain{
+        width: 800px;
+        .azMenu {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+            .azTextMenu {
+                font-size: 0.8rem;
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                list-style: none;
+                h2{
+                    margin: 10px;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        .azContAlphab{
+             .azIndex{
+                list-style: none;
+                hr{
+                    margin-top: 0;
+                }
+                h2{
+                    font-size: 1.3rem;
+                    margin-bottom: 0;
+                }
+            }
+        }  
+    }
+}
+.faqMainCenter{
+    @extend .mainCenter;
+    .faqMain{
+        width: 800px;
+        .faqTitle{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .faqContent{
+            border: #bd92d3 3px solid;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            td{
+                padding: 0 10px 0;
+            }
+        }
+        .formularioContacto{
+            margin-top: 50px;
+            .submitButton {
+                margin: 5px;
+             }
+        }
+    }
+}
+
+.charaOption {
+    display: flex ;
+    justify-content: center;
+    margin: 0 20px 0 20px;
+    ul{
+        font-size: 0.8rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        list-style: none;
+        h2{
+            margin: 10px;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.chMainCenter{
+    @extend .mainCenter;
+    .charaMainPic {
+        grid-area: charaMainPic;
+        width: 400px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+    }
+    .charaMainInfo {
+        grid-area: charaMainInfo ;
+        width: 400px;
+        height: 400px;
+        overflow: scroll;
+        padding: 10px;
+        
+    }
+}
+.rMainCenter{
+    @extend .mainCenter;
+    .rankOption {
+        @extend .charaOption;
+        li{
+            margin: 0 10px 0 10px;
+        }
+    }
+    .numberOne {
+        background-color: #f5eaff;
+        display: flex;
+        flex-direction: row;
+        .numberOnePic {
+            background-color: #f5eaff;
+        }
+        .numberOneInfo {
+            overflow: scroll;
+            padding: 10px;
+            h3{
+                font-size: 1rem;
+            }
+        }
+    }
+    .rankingOther {
+        margin-top: 20px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        .secondPlace {
+            background-color: #f5eaff;
+            display: flex;
+            flex-direction: row;
+            .secondInfo {
+                overflow: scroll;
+            }
+        }
+        .thirdPlace {
+            background-color: #f5eaff;
+            display: flex;
+            flex-direction: row;
+            .thirdInfo {
+                overflow: scroll;
+            }
+        } 
+    }
+}
+
+
+
+@media screen and (max-width: 480px){
+    .firstLine{
+        margin: 0;
+    }
+    .menuBar{
+        margin: 0;
+    }
+    .container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 5px 10px;
+        grid-template-areas: 
+        "pjRank pjRank"
+        "pjRank pjRank"
+        "aniRank aniRank"
+        "seiRank seiRank";
+        .pjRank{
+            grid-area:pjRank ;
+            .firstPPic{
+                height: 200px;
+                display: flex;
+                border: 5px #dfaee1 solid;
+            }
+        }
+        .aniRank{grid-area: aniRank;}
+        .seiRank{grid-area: seiRank;}
+        }
+    main{
+        width: 400px;
+        hr{
+            justify-content: center;
+        }
+    }
+    .charaMain {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "charaMainPic"
+        "charaMainInfo";
+        .gallery {
+            margin-top: 50px;
+            padding: 30px;
+            width: 300px;
+        }
+    }
+    .rMainCenter{
+        .numberOne {
+            width: 300px;
+            height: 300px;
+            .numberOnePic {
+                width: 200px;
+            }
+            .numberOneInfo {
+                width: 100px;
+            }
+        }
+        .rankingOther {
+            .secondPlace {
+                width: 200px;
+                .secondInfo {
+                    width: 70px;
+                }
+            }
+            .thirdPlace {
+                width: 150px;
+                .thirdInfo {
+                    width: 70px;
+                }
+            } 
+        }
+    }
+}
+
+
+@media screen and (min-width: 480px){
+    main{
+        .weekRank{
+            display: flex;
+            justify-content: center;
+         .weeklyRank{
+            width: 800px;  
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+    }
+    .container{
+        display: grid;
+        height: max-content;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 5px 10px;
+        grid-template-areas: 
+        "pjRank aniRank"
+        "pjRank aniRank"
+        "pjRank seiRank"
+        "pjRank seiRank";
+        .pjRank{
+            grid-area:pjRank ;
+            .firstPPic{
+                height: 200px;
+                display: flex;
+                border: 5px #dfaee1 solid;
+            }
+        }
+        .aniRank{grid-area: aniRank;}
+        .seiRank{grid-area: seiRank;}
+        }
+    }
+    .charaMain {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "charaMainPic charaMainInfo"
+        "charaMainPic charaMainInfo";
+        .charaMainPic {
+            grid-area: charaMainPic;
+            width: 400px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+        }
+        .charaMainInfo {
+            grid-area: charaMainInfo ;
+            width: 400px;
+            height: 400px;
+            overflow: scroll;
+            padding: 10px;
+        }
+        .gallery {
+            margin-top: 50px;
+            padding: 30px;
+            width: 600px;
+        }
+    }
+    .rMainCenter{
+        .numberOne {
+            width: 700px;
+            height: 350px;
+            .numberOnePic {
+                width: 500px;
+            }
+            .numberOneInfo {
+                width: 300px;
+            }
+        }
+        .rankingOther {
+            margin-top: 20px;
+            height: 300px;
+            .secondPlace {
+                width: 400px;
+                .secondInfo {
+                    width: 100px;
+                }
+            }
+            .thirdPlace {
+                width: 300px;
+                .thirdInfo {
+                    width: 100px;
+                }
+            } 
+        }
+    }
+}
