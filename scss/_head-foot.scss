@@ -1,0 +1,92 @@
+$oscuro:#4f256b;
+
+.firstLine{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 90vw;
+        .bestTitle{
+            text-decoration: none;
+            color: $oscuro;
+        }
+        div{
+            align-content: center;
+            .langIcon{
+                width: 22px;
+                height: 22px;
+                margin-left: 1px ;
+                margin-right: 1px;
+                display: inline-block;
+            }
+            h2{
+                font-size: 1rem;
+                display: inline;
+                color: black;
+                a{
+                    text-decoration: underline;
+                    color: black;
+                }
+            }
+        }
+    }
+.nuevoMenu{
+        width: 80%;
+        background-color:blueviolet;
+        background: linear-gradient(to right, #f5eaff 0%,#bd92d3 47%,#4f256b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        color: aliceblue;
+        height: 40px;
+        align-content: center;
+        .contMenu{
+            padding: 0;
+            margin: 10px;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            .itemMenu{
+                padding: 5px;
+                &:hover{
+                    background-color: white;
+                    border-radius: 20px;
+                    a{color: $oscuro;}
+                }
+                a{
+                    text-decoration: none;
+                    color: #f5eaff;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .wholeFoot{
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+    }
+    .linksFooter{
+        display: flex;
+        ul{
+            list-style: none;
+            .linkFut{
+                text-decoration: none;
+                color: white;
+                padding: 10px;
+                        }
+                }
+        }
+     .footLogos{
+            @extend .linksFooter;
+            .iconList{
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                .socialIcon{
+                    width: 25px;
+                    margin: 0 10px 0 10px;
+                }
+            }
+        }
+            
+        

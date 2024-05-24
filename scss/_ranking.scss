@@ -1,0 +1,110 @@
+$oscuro:#4f256b;
+
+.rMainCenter{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80vw;
+    .rankOption {
+        @extend .charaOption;
+        ul{
+            padding: 0;
+            margin: 5px;
+            display: flex;
+            justify-content: space-around;
+            li{
+                margin: 0 10px 0 10px;
+                .selected{
+                    background-color: #f5eaff;
+                    border-radius: 40%;
+                }
+                a{
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                    color: $oscuro;
+                    &:hover{
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+    .rankMain{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .numberOne {
+            display: flex;
+            flex-direction: row;
+            width: 60vw;
+            justify-content: center;
+            .numberOnePic {
+                width: 50%;
+                align-content: center;
+                overflow: hidden;
+                img{
+                    border: $oscuro solid 5px;
+                    width: 100%;
+                }
+            }
+            .numberOneInfo {
+                background-color: #f5eaff;
+                border-radius: 10%;
+                width: 50%;
+                overflow: auto;
+                padding: 20px;
+            }
+        }
+        .rankingOther {
+            margin-top: 20px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            .secondPlace {
+                margin: 5px;
+                display: flex;
+                flex-direction: row;
+                .secondPic{
+                    align-content: center;
+                    width: 50%;
+                    overflow: hidden;
+                    border: $oscuro solid 5px;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .secondInfo {
+                    background-color: #f5eaff;
+                    border-radius: 10%;
+                    width: 50%;
+                    overflow: auto;
+                    padding: 20px;
+                }
+            }
+            .thirdPlace {
+                margin: 5px;
+                display: flex;
+                flex-direction: row;
+                .thirdPic{
+                    align-content: center;
+                    width: 50%;
+                    overflow: hidden;
+                    border: $oscuro solid 5px;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .thirdInfo {
+                    background-color: #f5eaff;
+                    border-radius: 10%;
+                    width: 50%;
+                    overflow: auto;
+                    padding: 20px;
+                }
+            } 
+        }
+    }
+        
+    }

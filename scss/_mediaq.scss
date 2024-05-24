@@ -1,0 +1,193 @@
+@media screen and (max-width: 480px){
+    .firstLine{
+        display: none;
+    }
+    .nuevoMenu{
+        width: 100vw;
+    }
+    .containerRank{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 5px 10px;
+        grid-template-areas: 
+        "pjRank pjRank"
+        "pjRank pjRank"
+        "aniRank aniRank"
+        "seiRank seiRank";
+        .pjRank{
+            grid-area:pjRank ;
+            .rankChara{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                .firstPic{
+                    width: 25vw;
+                    margin: 10px;
+                    }
+                .secondPic{
+                    width: 22vw;
+                    margin: 10px;
+                }
+                .thirdPic{
+                    width: 19vw;
+                    margin: 10px;
+                }  
+            }   
+        }
+        .aniRank{grid-area: aniRank;}
+        .seiRank{grid-area: seiRank;}
+        }
+    .wholeFoot{
+        display: flex;
+        justify-content: center;
+        .futer{
+            display: flex;
+            height: fit-content;
+            flex-direction: column;
+            flex-wrap: wrap;       
+            .linksFooter{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0;
+                    li{
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+            .footLogos{
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+    .charaMain {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "charaMainPic"
+        "charaMainInfo";
+        .gallery {
+            margin-top: 50px;
+            padding: 30px;
+            width: 300px;
+        }
+    }
+}
+
+
+@media screen and (min-width: 480px){
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+            .weeklyRank{
+            width: 80vw;
+            display: flex;
+            justify-content: center;
+            .rankChara{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                div{
+                    padding: 10px;
+                    .firstPic{
+                        width: 25vw;
+                        margin: 10px;
+                        }
+                    .secondPic{
+                        width: 20vw;
+                        margin: 10px;
+                    }
+                    .thirdPic{
+                        width: 19vw;
+                        margin: 10px;
+                    }  
+                }  
+            }   
+        }
+    }
+    .container{
+        display: grid;
+        height: max-content;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 5px 10px;
+        grid-template-areas: 
+        "pjRank aniRank"
+        "pjRank aniRank"
+        "pjRank seiRank"
+        "pjRank seiRank";
+        .pjRank{
+            grid-area:pjRank ;
+            .firstPPic{
+                height: 200px;
+                display: flex;
+                border: 5px #dfaee1 solid;
+            }
+        }
+        .aniRank{grid-area: aniRank;}
+        .seiRank{grid-area: seiRank;}
+        }
+    }
+    .futer{
+        @extend .nuevoMenu;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .linksFooter{
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                padding: 0;
+                align-content: center;
+                margin: 0;
+                li{
+                    display: flex;
+                    align-content: center;
+                }
+            }
+        }
+        .footLogos{
+            
+        }
+    }
+    .charaMain {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "charaMainPic charaMainInfo"
+        "charaMainPic charaMainInfo";
+        .charaMainPic {
+            grid-area: charaMainPic;
+            width: 400px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+        }
+        .charaMainInfo {
+            grid-area: charaMainInfo ;
+            width: 400px;
+            height: 400px;
+            overflow: scroll;
+            padding: 10px;
+        }
+        .gallery {
+            margin-top: 50px;
+            padding: 30px;
+            width: 600px;
+        }
+    }

@@ -16,60 +16,34 @@
 
 <body>
     <header>
-        <div class="firstLine"> 
-            <h1 class="bestoHTitle"> <a href="./index.html">BESTO HUSBIES 💜💜💙</a></h1>  
+        <div class="firstLine m-auto"> 
+            <a class="bestTitle" href="./index.html"><h1>BESTO HUSBIES 💜💜💙</h1></a>  
             <div>
                 <img  class="langIcon" src="./multimedia/iconoespanol.png" alt="idioma español">
                 <img  class="langIcon" src="./multimedia/iconojapones.png" alt="idioma japonés">
                 <img  class="langIcon" src="./multimedia/iconoingles.png" alt="idioma ingles">
-                <h2 class="ingreso logIn">Log in</h2>
-                <h2 class="ingreso">/</h2>
-                <h2 class="ingreso signUp">Sign up</h2>
+                <h2><span><a href="">Log in</a></span> / <span><a href="">Sign up</a></span> </h2>
            </div>
         </div>
-        
-       <div class="menuBar">
-            <nav class="navbar navbar-expand-md bg-body menu">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./paginas/ranking.html" class="menuB goRanking whiteLetter">Ranking</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./paginas/az.html" class="menuB goAZ whiteLetter">A-Z Husbies</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Recommended
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Character</a></li>
-                          <li><a class="dropdown-item" href="#">Anime/Manga</a></li>
-                          <li><a class="dropdown-item" href="#">Seiyuu</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./paginas/character.html" class="menuB goRandom whiteLetter" >Random</a>
-                      </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline" type="submit">Search</button>
-                    </form>
-                  </div>
-                </div>
-              </nav>
-       </div>
-       
+        <nav class="nuevoMenu m-auto">
+          <ul class="contMenu">
+            <li class="itemMenu">
+              <a class="irPaginas" href="./paginas/ranking.html">Ranking</a>
+            </li>
+            <li class="itemMenu">
+              <a class="irPaginas" href="./paginas/az.html">A-Z Husbies</a>
+            </li>
+            <li class="itemMenu">
+              <a class="irPaginas" href="">Recommended</a>
+            </li>
+            <li class="itemMenu">
+              <a class="irPaginas" href="./paginas/character.html">Random</a>
+          </ul>
+        </nav>
     </header>
 
-    <main>
-        <div id="carouselExampleAutoplaying" class="carousel slide w-50 m-auto" data-bs-ride="carousel">
+    <main class="m-auto">
+        <div id="carouselExampleAutoplaying" class="carousel slide caroMain m-auto" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="./multimedia/OH535GK6LVDY7BF6NVCX24PSSQ.jpg" class="d-block w-100" alt="first pic">
@@ -90,15 +64,18 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-        
-       <div class="weekRank">
-           <div class="weeklyRank">
-                <h2>Weekly Ranking</h2>
-                <div class="rankContainer container">
-                    <main class="pjRank">
-                        <h3>Character</h3>
-                        <div class="rankChara">
-                            <img class=" firstPPic m-auto" src="./multimedia/one_piece___donquixote_doflamingo_by_a1nime_dgzx0zz-fullview.jpg" alt="1st place">
+          <br>
+          <h2 class="m-auto">Weekly Ranking</h2>
+        <div class="weeklyRank m-auto">
+            <div class="containerRank m-auto">
+                <main class="pjRank">
+                    <h3>Character</h3>
+                    <div class="rankChara">
+                        <div>
+                          <img class="thirdPic m-auto" src="./multimedia/gojo.webp" alt="1st place">
+                          <img class="firstPic m-auto" src="./multimedia/one_piece___donquixote_doflamingo_by_a1nime_dgzx0zz-fullview.jpg" alt="1st place">
+                          <img class="secondPic m-auto" src="./multimedia/levi.jpg" alt="1st place">
+                        </div>
                             <table class="table table-striped">
                                 <tbody>
                                   <tr>
@@ -115,8 +92,8 @@
                                   </tr>
                                   <tr>
                                     <th scope="row">3</th>
-                                    <td>Himmel The Hero</td>
-                                    <td>Sousou no Frieren</td>
+                                    <td>Satoru Gojo</td>
+                                    <td>Jujutsu Kaisen</td>
                                     <td>1494 votes</td>
                                   </tr>
                                 </tbody>
@@ -175,35 +152,29 @@
                     </aside>
 
                 </div>
-           </div>
+           
        </div>
     </main>
 
     <footer>
         <div class="wholeFoot">
-            <nav class="navbar navbar-expand-md bg-body-tertiary futer">
-                <div class="container-fluid">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="./index.html" class="menuB GoHome whiteLetter">Home</a>
-                      <a class="nav-link" href="#">About us</a>
-                      <a class="nav-link" href="#">Site map</a>
-                      <a class="nav-link" href="./paginas/faq.html" class="menuB goFAQ whiteLetter">F.A.Q.</a>
+            <nav class="futer">
+                    <div class="linksFooter">
+                      <ul>
+                        <li><a class="linkFut" href="./index.html" >Home</a></li>
+                        <li><a class="linkFut" href="#">About us</a></li>
+                        <li><a class="linkFut" href="#">Site map</a></li>
+                        <li><a class="linkFut" href="./paginas/faq.html">F.A.Q.</a></li>
+                      </ul>
                     </div>
                     <div class="footLogos">
-                        <ul class="iconList">
+                        <ul class="iconList m-auto">
                             <li><img src="./multimedia/Instagram-Icon.png" alt="ig icon" class="socialIcon"></li>
                             <li><img src="./multimedia/fb-icon.png" alt="fb icon" class="socialIcon"></li>
                             <li><img src="./multimedia/png-clipart-discord-computer-servers-teamspeak-discord-icon-video-game-smiley-thumbnail.png" alt="discord icon" class="socialIcon"></li>
                             <li><img src="./multimedia/twitter logo.webp" alt="x icon" class="socialIcon"></li>
                         </ul>
-            
                     </div>
-                  </div>
-                </div>
               </nav>
         </div>
     </footer>    

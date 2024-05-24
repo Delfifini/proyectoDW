@@ -1,3 +1,95 @@
+.firstLine {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 90vw;
+}
+.firstLine .bestTitle {
+  text-decoration: none;
+  color: #4f256b;
+}
+.firstLine div {
+  align-content: center;
+}
+.firstLine div .langIcon {
+  width: 22px;
+  height: 22px;
+  margin-left: 1px;
+  margin-right: 1px;
+  display: inline-block;
+}
+.firstLine div h2 {
+  font-size: 1rem;
+  display: inline;
+  color: black;
+}
+.firstLine div h2 a {
+  text-decoration: underline;
+  color: black;
+}
+
+.nuevoMenu, .futer {
+  width: 80%;
+  background-color: blueviolet;
+  background: linear-gradient(to right, #f5eaff 0%, #bd92d3 47%, #4f256b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  color: aliceblue;
+  height: 40px;
+  align-content: center;
+}
+.nuevoMenu .contMenu, .futer .contMenu {
+  padding: 0;
+  margin: 10px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.nuevoMenu .contMenu .itemMenu, .futer .contMenu .itemMenu {
+  padding: 5px;
+}
+.nuevoMenu .contMenu .itemMenu:hover, .futer .contMenu .itemMenu:hover {
+  background-color: white;
+  border-radius: 20px;
+}
+.nuevoMenu .contMenu .itemMenu:hover a, .futer .contMenu .itemMenu:hover a {
+  color: #4f256b;
+}
+.nuevoMenu .contMenu .itemMenu a, .futer .contMenu .itemMenu a {
+  text-decoration: none;
+  color: #f5eaff;
+  font-weight: bold;
+}
+
+.wholeFoot {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.linksFooter, .footLogos {
+  display: flex;
+}
+.linksFooter ul, .footLogos ul {
+  list-style: none;
+}
+.linksFooter ul .linkFut, .footLogos ul .linkFut {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.footLogos .iconList {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.footLogos .iconList .socialIcon {
+  width: 25px;
+  margin: 0 10px 0 10px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -10,86 +102,26 @@ body {
   font-optical-sizing: auto;
 }
 
-.firstLine {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-left: 100px;
-  margin-right: 100px;
-}
-.firstLine .bestoHTitle {
-  height: 22px;
-  font-size: 1rem;
-  margin-right: 0cm;
-  text-align: start left;
-}
-.firstLine div .langIcon {
-  width: 22px;
-  height: 22px;
-  margin-left: 1px;
-  margin-right: 1px;
-  display: inline-block;
-}
-.firstLine div .ingreso {
-  margin-left: 0;
-  margin-right: 0;
-  font-size: 1rem;
-  display: inline;
-  text-decoration: underline;
-}
-
-.navBar, .wholeFoot .futer, .menuBar .menu {
-  width: 80%;
-  background-color: blueviolet;
-  background: linear-gradient(to right, #f5eaff 0%, #bd92d3 47%, #4f256b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  color: aliceblue;
-  padding: 5px;
-  display: flex;
-  justify-content: center;
-}
-
-.mainCenter, .rMainCenter, .chMainCenter, .faqMainCenter, .azMainCenter {
+main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  align-content: center;
-  height: max-content;
+  width: 80vw;
+}
+main .caroMain {
+  width: 70vw;
 }
 
-.menuBar {
-  display: flex;
-  justify-content: center;
-  height: max-content;
-}
-.menuBar .menu li {
-  list-style: none;
-  display: inline-block;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.menuBar .menu li .menuB {
-  margin-left: 10px;
-  margin-right: 10px;
+h1 {
+  margin: 0;
+  padding: 5px;
+  color: #4f256b;
   font-size: 1.2rem;
+  font-weight: bold;
 }
 
-.wholeFoot {
-  margin-top: 100px;
-  display: flex;
-  justify-content: center;
-}
-.wholeFoot .futer div .footLogos {
-  display: flex;
-}
-.wholeFoot .futer div .footLogos .iconList {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-}
-.wholeFoot .futer div .footLogos .iconList .socialIcon {
-  width: 25px;
-  margin: 0 10px 0 10px;
+h3 {
+  margin: 0;
 }
 
 .azMainCenter hr {
@@ -152,8 +184,8 @@ body {
 
 .charaOption, .rMainCenter .rankOption {
   display: flex;
-  justify-content: center;
-  margin: 0 20px 0 20px;
+  justify-content: space-around;
+  width: 80vw;
 }
 .charaOption ul, .rMainCenter .rankOption ul {
   font-size: 0.8rem;
@@ -182,60 +214,231 @@ body {
   padding: 10px;
 }
 
-.rMainCenter .rankOption li {
+.rMainCenter {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 80vw;
+}
+.rMainCenter .rankOption ul {
+  padding: 0;
+  margin: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+.rMainCenter .rankOption ul li {
   margin: 0 10px 0 10px;
 }
-.rMainCenter .numberOne {
+.rMainCenter .rankOption ul li .selected {
   background-color: #f5eaff;
+  border-radius: 40%;
+}
+.rMainCenter .rankOption ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #4f256b;
+}
+.rMainCenter .rankOption ul li a:hover {
+  font-weight: bold;
+}
+.rMainCenter .rankMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.rMainCenter .rankMain .numberOne {
   display: flex;
   flex-direction: row;
+  width: 60vw;
+  justify-content: center;
 }
-.rMainCenter .numberOne .numberOnePic {
+.rMainCenter .rankMain .numberOne .numberOnePic {
+  width: 50%;
+  align-content: center;
+  overflow: hidden;
+}
+.rMainCenter .rankMain .numberOne .numberOnePic img {
+  border: #4f256b solid 5px;
+  width: 100%;
+}
+.rMainCenter .rankMain .numberOne .numberOneInfo {
   background-color: #f5eaff;
+  border-radius: 10%;
+  width: 50%;
+  overflow: auto;
+  padding: 20px;
 }
-.rMainCenter .numberOne .numberOneInfo {
-  overflow: scroll;
-  padding: 10px;
-}
-.rMainCenter .numberOne .numberOneInfo h3 {
-  font-size: 1rem;
-}
-.rMainCenter .rankingOther {
+.rMainCenter .rankMain .rankingOther {
   margin-top: 20px;
-  height: 200px;
+  height: 400px;
   display: flex;
   justify-content: center;
   flex-direction: row;
 }
-.rMainCenter .rankingOther .secondPlace {
-  background-color: #f5eaff;
+.rMainCenter .rankMain .rankingOther .secondPlace {
+  margin: 5px;
   display: flex;
   flex-direction: row;
 }
-.rMainCenter .rankingOther .secondPlace .secondInfo {
-  overflow: scroll;
+.rMainCenter .rankMain .rankingOther .secondPlace .secondPic {
+  align-content: center;
+  width: 50%;
+  overflow: hidden;
+  border: #4f256b solid 5px;
 }
-.rMainCenter .rankingOther .thirdPlace {
+.rMainCenter .rankMain .rankingOther .secondPlace .secondPic img {
+  width: 100%;
+}
+.rMainCenter .rankMain .rankingOther .secondPlace .secondInfo {
   background-color: #f5eaff;
+  border-radius: 10%;
+  width: 50%;
+  overflow: auto;
+  padding: 20px;
+}
+.rMainCenter .rankMain .rankingOther .thirdPlace {
+  margin: 5px;
   display: flex;
   flex-direction: row;
 }
-.rMainCenter .rankingOther .thirdPlace .thirdInfo {
-  overflow: scroll;
+.rMainCenter .rankMain .rankingOther .thirdPlace .thirdPic {
+  align-content: center;
+  width: 50%;
+  overflow: hidden;
+  border: #4f256b solid 5px;
+}
+.rMainCenter .rankMain .rankingOther .thirdPlace .thirdPic img {
+  width: 100%;
+}
+.rMainCenter .rankMain .rankingOther .thirdPlace .thirdInfo {
+  background-color: #f5eaff;
+  border-radius: 10%;
+  width: 50%;
+  overflow: auto;
+  padding: 20px;
 }
 
 @media screen and (max-width: 480px) {
   .firstLine {
-    margin: 0;
+    display: none;
   }
-  .menuBar {
-    margin: 0;
+  .nuevoMenu, .futer {
+    width: 100vw;
   }
-  .container {
+  .containerRank {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 5px 10px;
     grid-template-areas: "pjRank pjRank" "pjRank pjRank" "aniRank aniRank" "seiRank seiRank";
+  }
+  .containerRank .pjRank {
+    grid-area: pjRank;
+  }
+  .containerRank .pjRank .rankChara {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .containerRank .pjRank .rankChara .firstPic {
+    width: 25vw;
+    margin: 10px;
+  }
+  .containerRank .pjRank .rankChara .secondPic {
+    width: 22vw;
+    margin: 10px;
+  }
+  .containerRank .pjRank .rankChara .thirdPic {
+    width: 19vw;
+    margin: 10px;
+  }
+  .containerRank .aniRank {
+    grid-area: aniRank;
+  }
+  .containerRank .seiRank {
+    grid-area: seiRank;
+  }
+  .wholeFoot {
+    display: flex;
+    justify-content: center;
+  }
+  .wholeFoot .futer {
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .wholeFoot .futer .linksFooter, .wholeFoot .futer .footLogos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .wholeFoot .futer .linksFooter ul, .wholeFoot .futer .footLogos ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .wholeFoot .futer .linksFooter ul li, .wholeFoot .futer .footLogos ul li {
+    display: flex;
+    justify-content: center;
+  }
+  .wholeFoot .futer .footLogos ul {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+  }
+  .charaMain {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "charaMainPic" "charaMainInfo";
+  }
+  .charaMain .gallery {
+    margin-top: 50px;
+    padding: 30px;
+    width: 300px;
+  }
+}
+@media screen and (min-width: 480px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main .weeklyRank {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+  }
+  main .weeklyRank .rankChara {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  main .weeklyRank .rankChara div {
+    padding: 10px;
+  }
+  main .weeklyRank .rankChara div .firstPic {
+    width: 25vw;
+    margin: 10px;
+  }
+  main .weeklyRank .rankChara div .secondPic {
+    width: 20vw;
+    margin: 10px;
+  }
+  main .weeklyRank .rankChara div .thirdPic {
+    width: 19vw;
+    margin: 10px;
+  }
+  .container {
+    display: grid;
+    height: max-content;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 5px 10px;
+    grid-template-areas: "pjRank aniRank" "pjRank aniRank" "pjRank seiRank" "pjRank seiRank";
   }
   .container .pjRank {
     grid-area: pjRank;
@@ -251,131 +454,49 @@ body {
   .container .seiRank {
     grid-area: seiRank;
   }
-  main {
-    width: 400px;
-  }
-  main hr {
-    justify-content: center;
-  }
-  .charaMain {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "charaMainPic" "charaMainInfo";
-  }
-  .charaMain .gallery {
-    margin-top: 50px;
-    padding: 30px;
-    width: 300px;
-  }
-  .rMainCenter .numberOne {
-    width: 300px;
-    height: 300px;
-  }
-  .rMainCenter .numberOne .numberOnePic {
-    width: 200px;
-  }
-  .rMainCenter .numberOne .numberOneInfo {
-    width: 100px;
-  }
-  .rMainCenter .rankingOther .secondPlace {
-    width: 200px;
-  }
-  .rMainCenter .rankingOther .secondPlace .secondInfo {
-    width: 70px;
-  }
-  .rMainCenter .rankingOther .thirdPlace {
-    width: 150px;
-  }
-  .rMainCenter .rankingOther .thirdPlace .thirdInfo {
-    width: 70px;
-  }
 }
-@media screen and (min-width: 480px) {
-  main .weekRank {
-    display: flex;
-    justify-content: center;
-  }
-  main .weekRank .weeklyRank {
-    width: 800px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-  main .container {
-    display: grid;
-    height: max-content;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 5px 10px;
-    grid-template-areas: "pjRank aniRank" "pjRank aniRank" "pjRank seiRank" "pjRank seiRank";
-  }
-  main .container .pjRank {
-    grid-area: pjRank;
-  }
-  main .container .pjRank .firstPPic {
-    height: 200px;
-    display: flex;
-    border: 5px #dfaee1 solid;
-  }
-  main .container .aniRank {
-    grid-area: aniRank;
-  }
-  main .container .seiRank {
-    grid-area: seiRank;
-  }
-  .charaMain {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "charaMainPic charaMainInfo" "charaMainPic charaMainInfo";
-  }
-  .charaMain .charaMainPic {
-    grid-area: charaMainPic;
-    width: 400px;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-  }
-  .charaMain .charaMainInfo {
-    grid-area: charaMainInfo;
-    width: 400px;
-    height: 400px;
-    overflow: scroll;
-    padding: 10px;
-  }
-  .charaMain .gallery {
-    margin-top: 50px;
-    padding: 30px;
-    width: 600px;
-  }
-  .rMainCenter .numberOne {
-    width: 700px;
-    height: 350px;
-  }
-  .rMainCenter .numberOne .numberOnePic {
-    width: 500px;
-  }
-  .rMainCenter .numberOne .numberOneInfo {
-    width: 300px;
-  }
-  .rMainCenter .rankingOther {
-    margin-top: 20px;
-    height: 300px;
-  }
-  .rMainCenter .rankingOther .secondPlace {
-    width: 400px;
-  }
-  .rMainCenter .rankingOther .secondPlace .secondInfo {
-    width: 100px;
-  }
-  .rMainCenter .rankingOther .thirdPlace {
-    width: 300px;
-  }
-  .rMainCenter .rankingOther .thirdPlace .thirdInfo {
-    width: 100px;
-  }
+.futer {
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.futer .linksFooter ul, .futer .footLogos ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  padding: 0;
+  align-content: center;
+  margin: 0;
+}
+.futer .linksFooter ul li, .futer .footLogos ul li {
+  display: flex;
+  align-content: center;
+}
+.charaMain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "charaMainPic charaMainInfo" "charaMainPic charaMainInfo";
+}
+.charaMain .charaMainPic {
+  grid-area: charaMainPic;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+.charaMain .charaMainInfo {
+  grid-area: charaMainInfo;
+  width: 400px;
+  height: 400px;
+  overflow: scroll;
+  padding: 10px;
+}
+.charaMain .gallery {
+  margin-top: 50px;
+  padding: 30px;
+  width: 600px;
 }
 
 /*# sourceMappingURL=style.css.map */
